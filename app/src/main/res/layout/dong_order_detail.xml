@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/home_background"
+    android:orientation="vertical"
+    android:weightSum="10">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:weightSum="10">
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="145dp"
+            android:layout_weight="4"
+            android:orientation="vertical">
+
+
+            <ImageView
+                android:id="@+id/orderDetail_product_image"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:adjustViewBounds="true"
+             />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top
+"
+            android:layout_weight="6"
+            android:orientation="vertical"
+            android:weightSum="10">
+
+            <TextView
+                android:textColor="@color/textColor"
+                android:gravity="center"
+                android:fontFamily="@font/muli_black"
+                android:id="@+id/orderDetail_nameProduct_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:adjustViewBounds="true"
+                android:text="Arabica cầu đắt đặc biệt"
+                android:textSize="20dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+                <TextView
+                    android:textColor="@color/textColor"
+                    android:id="@+id/orderDetail_quantity_txt"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:adjustViewBounds="true"
+                    android:gravity="left"
+                    android:text="SL: 10"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:textColor="@color/textColor"
+                    android:id="@+id/orderDetail_price_txt"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_weight="2"
+                    android:adjustViewBounds="true"
+                    android:text="Giá: 1.000.000 Đ"
+                    android:textSize="16dp" />
+
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/orderDetail_chitiet_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@color/textColor"
+                android:text="chi tiết sản phẩm"
+                android:textColor="@color/white" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

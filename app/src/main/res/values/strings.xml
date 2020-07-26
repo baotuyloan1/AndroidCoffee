@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">AppBanHang</string>
+    <string name="navigation_drawer_open">Open nav dra</string>
+    <string name="navigation_drawer_close">Close nav dra</string>
+
+
+    <string name="logo_name">Coffee Shop</string>
+    <!--Boarding Screen-->
+
+    <!--Tiêu đề-->
+    <string name="first_slide_title">Tìm kiếm sản phẩm</string>
+    <string name="second_slide_title">Quản lý tài khoản</string>
+    <string name="third_slide_title">Chỉ đường</string>
+    <string name="fourth_slide_title">Liên hệ</string>
+
+    <!--Mô tả-->
+    <string name="first_slide_desc">Bạn có thể tìm kiếm theo loại sản phẩm hoặc theo tên. Chúng tôi sẽ hiển thị tất cả những gì bạn tìm kiếm</string>
+    <string name="second_slide_desc">Khi bạn đăng nhập thì sẽ hiển thị được thông tin tài khoản cũng như lịch sử đặt hàng</string>
+    <string name="third_slide_desc">Nếu bạn là người đầu tiên tìm đến của hàng, bản đồ sẽ giúp bạn tìm đến của hàng một cách nhanh chóng</string>
+    <string name="fourth_slide_desc">Nếu bạn có những thắc mắc hay góp ý. Vui lòng gửi email cho chúng tôi</string>
+
+    <!--Button-->
+    <string name="skip_btn">Skip</string>
+    <string name="next_btn">Next</string>
+    <string name="let_get_started">Bắt đầu</string>
+
+    <string name="search_text">Search....</string>
+
+    <string name="products_new">Sản phẩm mới nhất</string>
+    <string name="products_new_desciption">"Cá tính" rất riêng ấy được tạo nên bởi vùng thổ nhưỡng mà cây được vun trồng, bởi bàn tay người nông hộ đã thấu hiểu tường tận đất đai nơi này.</string>
+    <string name="products_most">Sản phẩm bán chạy</string>
+    <string name="view_all">Xem tất cả</string>
+    <string name="products_discount">Sản phẩm giảm giá</string>
+    <string name="products_discount_desciption">Mô tả sản phẩm giảm giá</string>
+    <string name="title_activity_maps">Map</string>
+</resources>

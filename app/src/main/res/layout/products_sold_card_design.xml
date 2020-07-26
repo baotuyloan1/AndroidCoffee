@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="330dp"
+    android:layout_height="160dp"
+    android:layout_margin="8dp"
+    app:cardCornerRadius="2dp"
+    app:cardElevation="10dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp">
+
+
+        <TextView
+
+            android:id="@+id/products_sold_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_toLeftOf="@id/products_sold_image"
+            android:text="Arabica"
+            android:textColor="@color/textColor"
+            android:textSize="20dp" />
+
+        <RatingBar
+            android:id="@+id/products_sold_rating"
+            style="@style/Widget.AppCompat.RatingBar.Small"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/products_sold_title"
+            android:layout_marginLeft="10dp"
+
+            android:rating="4" />
+
+
+        <TextView
+            android:id="@+id/products_sold_price_promotion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/products_sold_rating"
+            android:layout_marginLeft="10dp"
+            android:layout_toLeftOf="@id/products_sold_image"
+            android:layout_toRightOf="@id/products_sold_price_normal"
+            android:text="50,000 Đ"
+            android:textColor="@color/colorCamDam"
+
+            />
+
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:id="@+id/products_sold_price_normal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/products_sold_rating"
+            android:text="100,000 Đ"
+
+            />
+
+        <TextView
+            android:id="@+id/products_sold_desc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/products_sold_price_promotion"
+            android:layout_marginLeft="10dp"
+            android:layout_toLeftOf="@id/products_sold_image"
+            android:text="Mô tả sản phẩm ......"
+
+            />
+
+        <ImageView
+            android:id="@+id/products_sold_image"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="10dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/coffeeshoplogo" />
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

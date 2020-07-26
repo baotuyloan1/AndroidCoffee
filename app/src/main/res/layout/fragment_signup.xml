@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/home_background"
+    android:padding="30dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/signup_title_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/muli_black"
+            android:text="Tạo tài khoản"
+            android:textAllCaps="true"
+            android:textColor="@color/textColor"
+            android:textSize="40sp"
+            android:transitionName="transition_title_text" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Tên đầy đủ"
+                    android:textColorHint="@color/textColor"
+                    app:boxStrokeColor="@color/textColor"
+                    app:boxStrokeWidthFocused="2dp"
+                    app:endIconMode="clear_text"
+                    app:endIconTint="@color/textColor"
+                    app:hintTextColor="@color/textColor"
+                    app:startIconDrawable="@drawable/ic_fullname"
+                    app:startIconTint="@color/textColor">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/signup_fullname_txt"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:inputType="text" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Tên đăng nhập"
+                    android:textColorHint="@color/textColor"
+                    app:boxStrokeColor="@color/textColor"
+                    app:boxStrokeWidthFocused="2dp"
+                    app:endIconMode="clear_text"
+                    app:endIconTint="@color/textColor"
+                    app:hintTextColor="@color/textColor"
+                    app:startIconDrawable="@drawable/ic_username"
+                    app:startIconTint="@color/textColor">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/signup_username_txt"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Email"
+                    android:textColorHint="@color/textColor"
+                    app:boxStrokeColor="@color/textColor"
+                    app:boxStrokeWidthFocused="2dp"
+                    app:endIconMode="clear_text"
+                    app:endIconTint="@color/textColor"
+                    app:hintTextColor="@color/textColor"
+                    app:startIconDrawable="@drawable/ic_email"
+                    app:startIconTint="@color/textColor">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/signup_email_txt"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:inputType="textEmailAddress" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Số điện thoại"
+                    android:textColorHint="@color/textColor"
+                    app:boxStrokeColor="@color/textColor"
+                    app:boxStrokeWidthFocused="2dp"
+                    app:endIconMode="clear_text"
+                    app:endIconTint="@color/textColor"
+                    app:hintTextColor="@color/textColor"
+                    app:startIconDrawable="@drawable/ic_phone"
+                    app:startIconTint="@color/textColor">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/signup_phone_txt"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:inputType="phone" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Địa chỉ"
+                    android:textColorHint="@color/textColor"
+                    app:boxStrokeColor="@color/textColor"
+                    app:boxStrokeWidthFocused="2dp"
+                    app:endIconMode="clear_text"
+                    app:endIconTint="@color/textColor"
+                    app:hintTextColor="@color/textColor"
+                    app:startIconDrawable="@drawable/ic_location"
+                    app:startIconTint="@color/textColor">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/signup_address_txt"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:inputType="text" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Mật khẩu"
+                    android:textColorHint="@color/textColor"
+                    app:boxStrokeColor="@color/textColor"
+                    app:boxStrokeWidthFocused="2dp"
+                    app:endIconMode="password_toggle"
+                    app:endIconTint="@color/textColor"
+                    app:hintTextColor="@color/textColor"
+                    app:passwordToggleTint="@color/textColor"
+                    app:startIconDrawable="@drawable/ic_password"
+                    app:startIconTint="@color/textColor">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/signup_password_txt"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:inputType="textPassword" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Nhập lại mật khẩu"
+                    android:textColorHint="@color/textColor"
+                    app:boxStrokeColor="@color/textColor"
+                    app:boxStrokeWidthFocused="2dp"
+                    app:endIconMode="password_toggle"
+                    app:endIconTint="@color/textColor"
+                    app:hintTextColor="@color/textColor"
+                    app:passwordToggleTint="@color/textColor"
+                    app:startIconDrawable="@drawable/ic_password"
+                    app:startIconTint="@color/textColor">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/signup_password_txt2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:inputType="textPassword" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <Button
+                    android:id="@+id/signup_create_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:background="@color/textColor"
+                    android:elevation="5dp"
+                    android:text="Tạo tào khoản"
+                    android:textColor="@color/white" />
+
+                <Button
+                    android:id="@+id/signup_home_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:background="#00000000"
+                    android:elevation="5dp"
+                    android:fontFamily="@font/muli"
+                    android:text="TRANG CHỦ"
+                    android:textColor="@color/textColor"
+                    android:transitionName="transition_login_btn" />
+
+
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/home_background"
+    android:orientation="vertical"
+    android:padding="30dp"
+    android:weightSum="10"
+    tools:context=".Activity.InforAccount.OrderDetailActivity">
+
+
+    <ImageView
+        android:id="@+id/orderDetail_back_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:src="@drawable/ic_back" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/muli_black"
+        android:text="Chi tiết đơn hàng"
+        android:textAllCaps="true"
+        android:textColor="@color/textColor"
+        android:textSize="50sp" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="9">
+
+        <ListView
+            android:id="@+id/orderDetail_orderDetail_lv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"></ListView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="10dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:weightSum="10">
+
+
+        <Button
+            android:id="@+id/orderDetail_home_btn"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="10dp"
+            android:layout_weight="5"
+            android:background="@color/textColor"
+            android:text="màn hình chính"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/orderDetail_totalPrice_txt"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="5"
+            android:background="#00000000"
+            android:gravity="center"
+            android:text="Tổng: 100,000,000 Đ"
+            android:textColor="@color/textColor"
+            android:textSize="16dp" />
+
+
+    </LinearLayout>
+
+</LinearLayout>

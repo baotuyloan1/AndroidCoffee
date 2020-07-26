@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_home_black_24dp"
+            android:title="TRANG CHỦ" />
+        <item
+            android:id="@+id/nav_lienhe"
+            android:icon="@drawable/ic_phone"
+            android:title="LIÊN HỆ" />
+        <item
+            android:id="@+id/nav_map"
+            android:icon="@drawable/ic_location"
+            android:title="BẢN ĐỒ" />
+
+
+    </group>
+
+
+    <item android:title="PROFILE">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/nav_login"
+                    android:icon="@drawable/ic_username"
+                    android:title="ĐĂNG NHẬP" />
+
+                <item
+                    android:id="@+id/nav_profile"
+                    android:icon="@drawable/ic_infor"
+                    android:title="TÀI KHOẢN" />
+
+                <item
+                    android:id="@+id/nav_change_pass"
+                    android:icon="@drawable/ic_password"
+                    android:title="ĐỔI MẬT KHẨU" />
+                <item
+                    android:id="@+id/nav_change_profile"
+                    android:icon="@drawable/ic_fullname"
+                    android:title="CẬP NHẬT THÔNG TIN" />
+
+                <item
+                    android:id="@+id/nav_logout"
+                    android:icon="@drawable/ic_logout"
+                    android:title="ĐĂNG XUẤT" />
+
+                <item
+                    android:id="@+id/nav_signup"
+                    android:icon="@drawable/ic_fullname"
+                    android:title="ĐĂNG KÝ" />
+            </group>
+        </menu>
+
+    </item>
+
+
+    <item android:title="KHÁC">
+
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:icon="@drawable/ic_done"
+                    android:id="@+id/nav_coffee"
+                    android:title="TẤT CẢ THỂ LOẠI"></item>
+
+                <item
+                    android:icon="@drawable/ic_shopping_cart"
+                    android:id="@+id/nav_cart"
+                    android:title="GIỎ HÀNG"></item>
+
+            </group>
+        </menu>
+
+
+    </item>
+
+
+
+</menu>

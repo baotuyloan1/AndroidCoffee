@@ -1,0 +1,168 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/home_background"
+    android:padding="30dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/change_title_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:fontFamily="@font/muli_black"
+            android:text="Thay đổi thông tin"
+            android:textAllCaps="true"
+            android:textColor="@color/textColor"
+            android:textSize="40sp"
+            android:transitionName="transition_title_text" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Tên đầy đủ"
+                    android:textColorHint="@color/textColor"
+                    app:boxStrokeColor="@color/textColor"
+                    app:boxStrokeWidthFocused="2dp"
+                    app:endIconMode="clear_text"
+                    app:endIconTint="@color/textColor"
+                    app:hintTextColor="@color/textColor"
+                    app:startIconDrawable="@drawable/ic_fullname"
+                    app:startIconTint="@color/textColor">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/change_fullname_edt"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:inputType="text" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Tên đăng nhập"
+                    android:textColorHint="@color/textColor"
+                    app:boxStrokeColor="@color/textColor"
+                    app:boxStrokeWidthFocused="2dp"
+                    app:endIconMode="clear_text"
+                    app:endIconTint="@color/textColor"
+                    app:hintTextColor="@color/textColor"
+                    app:startIconDrawable="@drawable/ic_username"
+                    app:startIconTint="@color/textColor">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/change_username_edt"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Email"
+                    android:textColorHint="@color/textColor"
+                    app:boxStrokeColor="@color/textColor"
+                    app:boxStrokeWidthFocused="2dp"
+                    app:endIconMode="clear_text"
+                    app:endIconTint="@color/textColor"
+                    app:hintTextColor="@color/textColor"
+                    app:startIconDrawable="@drawable/ic_email"
+                    app:startIconTint="@color/textColor">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/change_email_edt"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:inputType="textEmailAddress" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Số điện thoại"
+                    android:textColorHint="@color/textColor"
+                    app:boxStrokeColor="@color/textColor"
+                    app:boxStrokeWidthFocused="2dp"
+                    app:endIconMode="clear_text"
+                    app:endIconTint="@color/textColor"
+                    app:hintTextColor="@color/textColor"
+                    app:startIconDrawable="@drawable/ic_phone"
+                    app:startIconTint="@color/textColor">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/change_phone_edt"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:inputType="phone" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Địa chỉ"
+                    android:textColorHint="@color/textColor"
+                    app:boxStrokeColor="@color/textColor"
+                    app:boxStrokeWidthFocused="2dp"
+                    app:endIconMode="clear_text"
+                    app:endIconTint="@color/textColor"
+                    app:hintTextColor="@color/textColor"
+                    app:startIconDrawable="@drawable/ic_location"
+                    app:startIconTint="@color/textColor">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/change_address_edt"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:inputType="text" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/change_info_btn"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:layout_weight="1"
+                        android:background="@color/textColor"
+                        android:elevation="5dp"
+                        android:text="Thay đổi thông tin"
+                        android:textColor="@color/white" />
+
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</LinearLayout>

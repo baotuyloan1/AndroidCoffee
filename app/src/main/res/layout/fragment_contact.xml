@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/home_background"
+    android:paddingLeft="30dp"
+    android:paddingRight="30dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/signup_title_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/muli_black"
+            android:text="Liên hệ"
+            android:textAllCaps="true"
+            android:textColor="@color/textColor"
+            android:textSize="40sp"
+            android:transitionName="transition_title_text" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:orientation="vertical">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/contact_fullname_edt"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Tên đầy đủ"
+                android:textColorHint="@color/textColor"
+                app:boxStrokeColor="@color/textColor"
+                app:boxStrokeWidthFocused="2dp"
+                app:endIconMode="clear_text"
+                app:endIconTint="@color/textColor"
+                app:hintTextColor="@color/textColor"
+                app:startIconDrawable="@drawable/ic_username"
+                app:startIconTint="@color/textColor">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/contact_fullname_edit"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:inputType="text" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Email"
+                android:textColorHint="@color/textColor"
+                app:boxStrokeColor="@color/textColor"
+                app:boxStrokeWidthFocused="2dp"
+                app:endIconMode="clear_text"
+                app:endIconTint="@color/textColor"
+                app:hintTextColor="@color/textColor"
+                app:startIconDrawable="@drawable/ic_email"
+                app:startIconTint="@color/textColor">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/contact_email_edt"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:inputType="textEmailAddress" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Số điện thoại"
+                android:textColorHint="@color/textColor"
+                app:boxStrokeColor="@color/textColor"
+                app:boxStrokeWidthFocused="2dp"
+                app:endIconMode="clear_text"
+                app:endIconTint="@color/textColor"
+                app:hintTextColor="@color/textColor"
+                app:startIconDrawable="@drawable/ic_phone"
+                app:startIconTint="@color/textColor">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/contact_phone_edt"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:inputType="phone" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Nội dung liên hệ"
+                android:textColorHint="@color/textColor"
+                app:boxStrokeColor="@color/textColor"
+                app:boxStrokeWidthFocused="2dp"
+                app:endIconMode="clear_text"
+                app:endIconTint="@color/textColor"
+                app:hintTextColor="@color/textColor"
+                app:startIconDrawable="@drawable/ic_fullname"
+                app:startIconTint="@color/textColor">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/contact_message_edt"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="start"
+                    android:inputType="textMultiLine"
+                    android:lines="5"
+                    android:maxLines="7" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Button
+                android:id="@+id/contact_send_message_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@color/textColor"
+                android:elevation="5dp"
+                android:text="Gửi nội dung"
+                android:textColor="@color/white" />
+
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

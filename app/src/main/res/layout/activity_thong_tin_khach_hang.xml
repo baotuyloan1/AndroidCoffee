@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/home_background"
+    android:padding="30dp"
+    tools:context=".Activity.CheckOut.ThongTinKhachHangActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:transitionName="transition_back_btn_signup"
+            android:id="@+id/checkout_back_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:src="@drawable/ic_back" />
+
+        <TextView
+            android:id="@+id/signup_title_text"
+            android:transitionName="transition_title_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/muli_black"
+            android:text="Xác nhận đơn hàng"
+            android:textAllCaps="true"
+            android:textColor="@color/textColor"
+            android:textSize="40sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:orientation="vertical">
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Tên đầy đủ"
+                android:textColorHint="@color/textColor"
+                app:boxStrokeColor="@color/textColor"
+                app:boxStrokeWidthFocused="2dp"
+                app:endIconMode="clear_text"
+                app:endIconTint="@color/textColor"
+                app:hintTextColor="@color/textColor"
+                app:startIconDrawable="@drawable/ic_baseline_person"
+                app:startIconTint="@color/textColor">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/checkout_fullname_txt"
+                    android:inputType="text" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Email"
+                android:textColorHint="@color/textColor"
+                app:boxStrokeColor="@color/textColor"
+                app:boxStrokeWidthFocused="2dp"
+                app:endIconMode="clear_text"
+                app:endIconTint="@color/textColor"
+                app:hintTextColor="@color/textColor"
+                app:startIconDrawable="@drawable/ic_email"
+                app:startIconTint="@color/textColor">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/checkout_email_txt"
+                    android:inputType="textEmailAddress" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Số điện thoại"
+                android:textColorHint="@color/textColor"
+                app:boxStrokeColor="@color/textColor"
+                app:boxStrokeWidthFocused="2dp"
+                app:endIconMode="clear_text"
+                app:endIconTint="@color/textColor"
+                app:hintTextColor="@color/textColor"
+                app:startIconDrawable="@drawable/ic_phone"
+                app:startIconTint="@color/textColor">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/checkout_phone_txt"
+                    android:inputType="phone" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Địa chỉ"
+                android:textColorHint="@color/textColor"
+                app:boxStrokeColor="@color/textColor"
+                app:boxStrokeWidthFocused="2dp"
+                app:endIconMode="clear_text"
+                app:endIconTint="@color/textColor"
+                app:hintTextColor="@color/textColor"
+                app:startIconDrawable="@drawable/ic_done"
+                app:startIconTint="@color/textColor">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/checkout_address_txt"
+                    android:inputType="textEmailAddress" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Ghi chú"
+                android:textColorHint="@color/textColor"
+                app:boxStrokeColor="@color/textColor"
+                app:boxStrokeWidthFocused="2dp"
+                app:endIconMode="clear_text"
+                app:endIconTint="@color/textColor"
+                app:hintTextColor="@color/textColor"
+                app:startIconDrawable="@drawable/ic_fullname"
+                app:startIconTint="@color/textColor">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/checkout_note_txt"
+                    android:inputType="textEmailAddress" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+            <Button
+                android:id="@+id/checkout_ok_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Đặt hàng"
+                android:elevation="5dp"
+                android:textColor="@color/white"
+                android:background="@color/textColor"
+                android:transitionName="transition_next_btn"
+                android:layout_marginTop="20dp"/>
+
+            <Button
+                android:id="@+id/checkout_login_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="tôi có tài khoản"
+                android:elevation="5dp"
+                android:fontFamily="@font/muli"
+                android:textColor="@color/textColor"
+                android:background="#00000000"
+                android:transitionName="transition_login_btn"
+                android:layout_marginTop="20dp"/>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>
