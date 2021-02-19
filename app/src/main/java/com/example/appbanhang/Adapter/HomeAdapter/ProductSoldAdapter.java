@@ -72,7 +72,7 @@ public class ProductSoldAdapter extends RecyclerView.Adapter<ProductSoldAdapter.
             holder.txtPrice.setText(decimalFormat.format(sanPham.getPrice()) + " Đ");
 
         }
-        Picasso.with(context).load(sanPham.getImage()).placeholder(R.drawable.noimage).error(R.drawable.noimage).into(holder.imageView);
+       Picasso.with(context).load(sanPham.getImage()).placeholder(R.drawable.noimage).error(R.drawable.noimage).into(holder.imageView);
     }
 
     @Override

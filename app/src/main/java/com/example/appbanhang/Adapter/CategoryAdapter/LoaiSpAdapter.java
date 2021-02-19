@@ -66,7 +66,7 @@ public class LoaiSpAdapter extends BaseAdapter {
             viewHolder.imgLoaiSp = (ImageView) convertView.findViewById(R.id.imageCategoryPage);
             viewHolder.btnExpand = (Button) convertView.findViewById(R.id.buttonExpandCategoryPage);
             convertView.setTag(viewHolder);
-            int so = position;
+            int so = (int)(Math.random()*((5)+1))+0;
             viewHolder.content.setBackgroundResource(mangBackground[so]);
         } else {
             viewHolder = (ViewHolder) convertView.getTag();

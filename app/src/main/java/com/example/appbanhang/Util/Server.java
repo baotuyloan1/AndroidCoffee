@@ -1,31 +1,31 @@
 package com.example.appbanhang.Util;
 
 public class Server {
-    public static String localhost = "192.168.1.5";
+    public static String localhost = "192.168.1.6";
 
     //    PRODUCT
-    public static String PRODUCT_CATE_LINK = "http://" + localhost + "/serverBanHang/getloaisp.php";
-    public static String PRODUCTS_NEW_LINK = "http://" + localhost + "/serverBanHang/getsanphammoinhat.php";
-    public static String PRODUCTS_DISCOUNT_LINK = "http://" + localhost + "/serverBanHang/getsanphamkhuyenmai.php";
-    public static String COFFEE_LINK = "http://" + localhost + "/serverBanHang/getsanpham.php?page=";
-    public static String PRODUCTS_SOLD_LINK = "http://" + localhost + "/serverBanHang/getsanphambanchay.php";
+    public static String PRODUCT_CATE_LINK = "http://" + localhost + "/ServerAndroidCoffee/getloaisp.php";
+    public static String PRODUCTS_NEW_LINK = "http://" + localhost + "/ServerAndroidCoffee/getsanphammoinhat.php";
+    public static String PRODUCTS_DISCOUNT_LINK = "http://" + localhost + "/ServerAndroidCoffee/getsanphamkhuyenmai.php";
+    public static String COFFEE_LINK = "http://" + localhost + "/ServerAndroidCoffee/getsanpham.php?page=";
+    public static String PRODUCTS_SOLD_LINK = "http://" + localhost + "/ServerAndroidCoffee/getsanphambanchay.php";
 
 
-    public static String INFOR_CUSTOMER_LINK = "http://" + localhost + "/serverBanHang/thongtinkhachhang.php";
-    public static String ORDER_LINK = "http://" + localhost + "/serverBanHang/donhang.php";
-    public static String ORDER_DETAIL_LINK = "http://" + localhost + "/serverBanHang/chitietdonhang.php";
+    public static String INFOR_CUSTOMER_LINK = "http://" + localhost + "/ServerAndroidCoffee/thongtinkhachhang.php";
+    public static String ORDER_LINK = "http://" + localhost + "/ServerAndroidCoffee/donhang.php";
+    public static String ORDER_DETAIL_LINK = "http://" + localhost + "/ServerAndroidCoffee/chitietdonhang.php";
 
 
     // Account
-    public static String LOGIN_LINK = "http://" + localhost + "/serverBanHang/getaccount.php";
-    public static String SIGNUP_LINK = "http://" + localhost + "/serverBanHang/postsignup.php";
-    public static String CHANGE_INFO_LINK = "http://" + localhost + "/serverBanHang/changeinfo.php";
-    public static String GET_INFO_LINK = "http://"+localhost+"/serverBanHang/getinfo.php";
-    public static String CHECK_PASS_BY_ID_LINK = "http://"+localhost+"/serverBanHang/getaccbyid.php";
-    public static String CHANGE_PASS_LINK = "http://"+localhost+"/serverBanHang/changepasswordbyid.php";
+    public static String LOGIN_LINK = "http://" + localhost + "/ServerAndroidCoffee/getaccount.php";
+    public static String SIGNUP_LINK = "http://" + localhost + "/ServerAndroidCoffee/postsignup.php";
+    public static String CHANGE_INFO_LINK = "http://" + localhost + "/ServerAndroidCoffee/changeinfo.php";
+    public static String GET_INFO_LINK = "http://"+localhost+"/ServerAndroidCoffee/getinfo.php";
+    public static String CHECK_PASS_BY_ID_LINK = "http://"+localhost+"/ServerAndroidCoffee/getaccbyid.php";
+    public static String CHANGE_PASS_LINK = "http://"+localhost+"/ServerAndroidCoffee/changepasswordbyid.php";
 
-    public static String GET_ORDER = "http://" + localhost + "/serverBanHang/getorder.php";
-    public static String GET_ORDER_DETAIL = "http://" + localhost + "/serverBanHang/getorderdetail.php";
+    public static String GET_ORDER = "http://" + localhost + "/ServerAndroidCoffee/getorder.php";
+    public static String GET_ORDER_DETAIL = "http://" + localhost + "/ServerAndroidCoffee/getorderdetail.php";
 
 
     public static String LOGIN_ICON_LINK = "https://firebasestorage.googleapis.com/v0/b/bt-sict.appspot.com/o/login-rounded-right.png?alt=media&token=d64557cf-7049-4285-92a2-e9712fa35f2c";

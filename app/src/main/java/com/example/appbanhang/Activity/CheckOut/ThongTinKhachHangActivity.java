@@ -114,7 +114,8 @@ public class ThongTinKhachHangActivity extends AppCompatActivity {
                                         if (isLogin()) {
                                             hashMap.put("accId", accId);
                                         } else {
-                                            hashMap.put("accId", null);
+                                            hashMap.put("accId", "0");
+
                                         }
 
                                         return hashMap;
@@ -157,6 +158,9 @@ public class ThongTinKhachHangActivity extends AppCompatActivity {
             String mEmail = user.get(sessionManager.EMAIL);
             accId = user.get(sessionManager.ID_USER);
             return true;
+        }
+        else {
+            accId = null;
         }
         return false;
 
