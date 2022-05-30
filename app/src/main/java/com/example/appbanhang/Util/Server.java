@@ -1,7 +1,7 @@
 package com.example.appbanhang.Util;
 
 public class Server {
-    public static String localhost = "192.168.1.6";
+    public static String localhost = "192.168.1.100/LaravelCoffee/API";
 
     //    PRODUCT
     public static String PRODUCT_CATE_LINK = "http://" + localhost + "/ServerAndroidCoffee/getloaisp.php";

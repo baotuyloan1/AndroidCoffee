@@ -3,6 +3,7 @@ package com.example.appbanhang.Activity.Fragment;
 import android.content.Intent;
 import android.graphics.drawable.GradientDrawable;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -154,9 +155,11 @@ public class MainFragment extends Fragment {
 
     private void getProductsNew() {
         RequestQueue requestQueue = Volley.newRequestQueue(rootView.getContext());
+
         final JsonArrayRequest jsonArrayRequest = new JsonArrayRequest(Server.PRODUCTS_NEW_LINK, new Response.Listener<JSONArray>() {
             @Override
             public void onResponse(JSONArray response) {
+                Log.d("AAA",response.length()+"");
                 if (response != null) {
                     for (int i = 0; i < response.length(); i++) {
                         JSONObject jsonObject = null;
